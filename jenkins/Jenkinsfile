@@ -10,11 +10,7 @@ pipeline {
 
       stage('Teste') {
 
-          agent {
-                docker { 
-                    image 'maven' 
-                    }
-          }
+        
           steps {
 
                 sh "mvn test"
