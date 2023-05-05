@@ -11,11 +11,13 @@ pipeline {
       stage('Teste') {
 
           agent {
-                docker { image 'maven' }
+                docker { 
+                    image 'maven' 
+                    }
           }
           steps {
 
-                sh "mvn clean install"
+                sh "mvn test"
             }
        }
     }
