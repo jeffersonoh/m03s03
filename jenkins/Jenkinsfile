@@ -1,19 +1,23 @@
 pipeline {
  
- agent any
+  agent any
 
-     stages {
+  environment {
+        POM_VERSION = ""
+    }
 
-        stage('Teste') {
+   stages {
 
-            agent {
+      stage('Teste') {
+
+          agent {
                 docker { image 'maven' }
-            }
-            steps {
+          }
+          steps {
 
                 sh "mvn clean install"
             }
-        }
+       }
     }
 
 
