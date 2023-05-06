@@ -9,11 +9,8 @@ pipeline {
    stages {
 
       stage('Teste') {
-
-        
           steps {
-
-                sh "mvn test"
+                sh "./mvnw --batch-mode -Dmaven.test.failure.ignore=true test"
             }
        }
     }
