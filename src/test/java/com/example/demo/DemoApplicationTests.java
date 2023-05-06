@@ -1,10 +1,10 @@
-package tech.devinhouse.personagens;
+package com.example.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PersonagensApiApplicationTests {
+class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
